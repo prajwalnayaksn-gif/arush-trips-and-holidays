@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="e" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b3b45" />
+      <stop offset="100%" stop-color="#0b221e" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#e)" />
+  <path d="M0 470C200 360 340 320 520 420C710 520 840 460 800 600H0Z" fill="#70c6b9" opacity="0.18" />
+  <text x="50" y="90" font-family="Poppins,sans-serif" font-size="72" fill="#fff" font-weight="700">Thailand</text>
+  <text x="50" y="140" font-family="Poppins,sans-serif" font-size="24" fill="#cef4ed">Tropical luxury & cultural nights</text>
+</svg>

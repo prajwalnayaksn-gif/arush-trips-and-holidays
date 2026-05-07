@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="d" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#472f11" />
+      <stop offset="100%" stop-color="#0a1315" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#d)" />
+  <path d="M0 420C200 340 320 280 540 340C720 390 860 350 800 600H0Z" fill="#f1d093" opacity="0.14" />
+  <path d="M0 470C220 400 420 360 620 430C760 480 820 430 800 600H0Z" fill="#fff" opacity="0.08" />
+  <text x="50" y="90" font-family="Poppins,sans-serif" font-size="72" fill="#fff" font-weight="700">Dubai</text>
+  <text x="50" y="140" font-family="Poppins,sans-serif" font-size="24" fill="#ffe8b5">City glamour & desert luxury</text>
+</svg>

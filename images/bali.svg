@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="c" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f5b53" />
+      <stop offset="100%" stop-color="#05252a" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#c)" />
+  <path d="M0 430C180 360 340 300 520 400C700 500 860 430 800 600H0Z" fill="#cff6ed" opacity="0.16" />
+  <path d="M0 530C240 500 420 470 620 540C760 590 820 560 800 600H0Z" fill="#fff" opacity="0.12" />
+  <text x="50" y="90" font-family="Poppins,sans-serif" font-size="72" fill="#fff" font-weight="700">Bali</text>
+  <text x="50" y="140" font-family="Poppins,sans-serif" font-size="24" fill="#c8f4e5">Island serenity & private villas</text>
+</svg>
