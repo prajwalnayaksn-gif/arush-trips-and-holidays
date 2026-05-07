@@ -5,7 +5,7 @@ const backToTop = document.getElementById('backToTop');
 const header = document.getElementById('header');
 const pageLoader = document.getElementById('page-loader');
 const contactForm = document.getElementById('contactForm');
-const formStatus = document.getElementById('formStatus');
+const whatsappButton = document.getElementById('whatsappButton');
 const testimonialSlider = document.getElementById('testimonialSlider');
 const testimonialCards = testimonialSlider.querySelectorAll('.testimonial-card');
 
@@ -110,39 +110,20 @@ const nextTestimonial = () => {
 showTestimonial(testimonialIndex);
 setInterval(nextTestimonial, 5500);
 
-const FORMSPREE_ENDPOINT = 'https://formspree.io/arushtripsandholidays@gmail.com';
+const WA_NUMBER = '917799003599';
 
-contactForm.addEventListener('submit', async (event) => {
+contactForm.addEventListener('submit', (event) => {
   event.preventDefault();
-  formStatus.textContent = 'Sending message...';
-  formStatus.style.color = '#fff';
+});
 
-  const formData = new FormData(contactForm);
-  const payload = {
-    name: formData.get('name'),
-    email: formData.get('email'),
-    phone: formData.get('phone'),
-    message: formData.get('message'),
-  };
-
-  try {
-    const response = await fetch(FORMSPREE_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-    });
-
-    if (response.ok) {
-      formStatus.textContent = 'Thank you! Your message has been sent successfully.';
-      formStatus.style.color = '#8aed9d';
-      contactForm.reset();
-    } else {
-      throw new Error('Submission failed');
-    }
-  } catch (error) {
-    formStatus.textContent = 'Oops! Something went wrong. Please try again later.';
-    formStatus.style.color = '#f78a8a';
-  }
+whatsappButton.addEventListener('click', () => {
+  const nameValue = document.getElementById('name').value.trim();
+  const messageValue = document.getElementById('message').value.trim();
+  const nameText = nameValue || 'there';
+  const messageText = messageValue || 'I would like more information about your travel packages.';
+  const text = `Hello, my name is ${nameText}. I would like to know more about your travel packages. Message: ${messageText}`;
+  const whatsappUrl = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(text)}`;
+  window.location.href = whatsappUrl;
 });
 
 window.addEventListener('load', () => {
